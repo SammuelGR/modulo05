@@ -4,7 +4,6 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:react/recommended',
 		'airbnb',
 		'prettier',
 		'prettier/react'
@@ -28,6 +27,9 @@ module.exports = {
   rules: {
 		'prettier/prettier': 'error',
 		'react/state-in-constructor': 0,
+		'react/static-property-placement': [
+			'warn', 'static public field'
+		],
 		'react/jsx-filename-extension': [
 			'warn',
 			{ extensions: ['.jsx', '.js'] }
